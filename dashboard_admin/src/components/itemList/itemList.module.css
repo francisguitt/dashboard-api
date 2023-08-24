@@ -1,0 +1,85 @@
+.td_btns_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+  
+}
+.erase {
+    color: rgb(247, 244, 244);
+    font-size: 30px;
+    padding: 5px;
+    background-color: #ca1d1d;
+    width: 100%;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+
+}
+
+.edit {  
+    color: rgb(242, 242, 247);
+    font-size: 30px;
+    padding: 5px;
+    background-color: #237612;
+    width: 100%;
+    cursor: pointer;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+
+table {
+    width: 95%;
+    border-collapse: collapse;
+}
+table th,
+table td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #dbdddb;
+    background-color: #f5f5f5;
+}
+table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    text-align: center;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+table tbody tr:hover {
+    background-color: #ffffff;
+}
+table button {
+    margin-right: 5px;
+}
+td button {
+    display: flex;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+    width: 50px;
+}
+.Icon_link_image {
+    font-size: 20px;
+    color: #172e44;
+    cursor: pointer;
+}
+
+.imageUrlCenter {
+    text-align: center;
+    padding: 6px;
+    background-color: #f5f5f5;
+    margin: auto;
+}
+ 

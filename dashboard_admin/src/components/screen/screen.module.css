@@ -1,0 +1,30 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.list_products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+    font-size: 25px;
+    margin-left: 150px;
+}
+
+.Icon_data_base {
+    color: #1d6f0b;
+    font-size: 50px;
+}
+
+.wrapper_item_create_form_item_update_form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+    margin-top: -10px;
+}

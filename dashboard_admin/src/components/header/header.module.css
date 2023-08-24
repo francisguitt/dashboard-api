@@ -1,0 +1,140 @@
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #dfdfdf;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.menu_header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* background-color: #00C853; */
+}
+
+.IconRegister {
+    margin-top: -10px;
+    font-size: 45px;
+    width: 100px;
+    color: rgb(26, 10, 133);
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.IconProducts {
+    margin-top: -10px;
+    font-size: 45px;
+    width: 100px;
+    color: rgb(26, 10, 133);
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.filterIcon {
+    margin-top: -12px;
+    font-size: 55px;
+    width: 100px;
+    color: rgb(26, 10, 133);
+    cursor: pointer;
+}
+
+.header button {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    border: 0;
+    background-color: transparent;
+}
+
+.show_register_products button {
+    width: 80px;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.show_list_products button {
+    width: 80px;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.search button {
+    background: #2da65f;
+    text-align: center;
+    margin-top: -5px;
+    color: #555;
+}
+
+.search {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.btn_search {
+    background: #2da65f;
+    text-align: center;
+    padding: 10px;
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    margin: 5px 5px;
+    cursor: pointer;
+    color: #555;
+}
+
+.search input {
+    outline: none;
+    border: 0;
+}
+
+.area_admin {
+    padding: 10px;
+}
+
+.area_title_admin {
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(227, 227, 227);
+}
+
+.area_title_admin h2 {
+    color: #c80000;
+}
+
+
+
+@media(max-width:768px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+    }
+
+    .menu_header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .area_admin {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .area_title_admin {
+        display: flex;
+        /* flex-direction: column; */
+        /* width: 50%; */
+    }
+
+}

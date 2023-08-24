@@ -1,0 +1,46 @@
+
+
+.search_result {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 99.99%;
+    margin-bottom: 6px;
+}
+.td_btns_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  
+}
+
+.erase {
+    color: rgb(247, 244, 244);
+    font-size: 30px;
+    padding: 5px;
+    background-color: #ca1d1d;
+    width: 100%;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+
+}
+
+.edit {  
+    color: rgb(242, 242, 247);
+    font-size: 30px;
+    padding: 5px;
+    background-color: #237612;
+    width: 100%;
+    cursor: pointer;
+}
+
+.imageUrlCenter {
+    text-align: center;
+    padding: 6px;
+    background-color: #f5f5f5;
+    margin: auto;
+}
+

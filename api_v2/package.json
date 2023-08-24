@@ -1,0 +1,26 @@
+{
+  "name": "api_v2",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon ./src/server.js"
+  },
+  "author": "guitt-zoom",
+  "license": "ISC",
+  "dependencies": {
+    "apicache": "^1.6.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-api-cache": "^1.0.4",
+    "firebase": "^10.1.0",
+    "firebase-admin": "^11.9.0",
+    "nodemon": "^3.0.1",
+    "yup": "^1.2.0"
+  },
+  "overrides": {
+    "firebase": "$firebase"
+  }
+}

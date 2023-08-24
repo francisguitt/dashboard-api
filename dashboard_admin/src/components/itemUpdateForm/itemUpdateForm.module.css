@@ -1,0 +1,89 @@
+
+
+.update_area {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    width: 100%;
+ 
+}
+
+.update_area input {
+    width: 100%;
+    padding: 10px;
+    margin: 12px;
+    border: 0;
+    outline: none;
+    background-color: #f1e9e7;
+}
+
+
+fieldset {
+    width: 85%;
+    text-align: left;
+    margin-left: 1.5rem;
+    border: 0;
+}
+
+legend {
+    text-align: left;
+    margin-left: 15px;
+}
+
+
+
+
+.Icon_link_image {
+    font-size: 20px;
+    color: #172e44;
+    cursor: pointer;
+}
+
+.imageUrlCenter {
+    text-align: center;
+    padding: 6px;
+    background-color: #f5f5f5;
+    margin: auto;
+}
+
+
+
+
+.btn_update {
+    color: rgb(246, 250, 246);
+    font-size: 14px;
+    background-color: #00C853;
+    padding: 10px;
+}
+
+
+input[type="text"] {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #ca1d1d;
+}
+
+.update_area button {
+    border: 0;
+    border-radius: 4px;
+    padding: 9px 16px;
+    margin-right: 10px;
+    margin-left: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 200px;
+}
+
+
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
