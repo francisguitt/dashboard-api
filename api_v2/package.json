@@ -6,6 +6,7 @@
   "main": "index.js",
   "scripts": {
     "server": "nodemon ./src/server.js"
+
   },
   "author": "guitt-zoom",
   "license": "ISC",
