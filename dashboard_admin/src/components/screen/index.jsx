@@ -14,7 +14,7 @@ import { DataBase } from '../icons';
 const Screen = () => {
 
 
-    const API_BASE_URL = 'http://localhost:8000';
+    const API_BASE_URL = 'https://api-v2-384e.onrender.com';
     const [itens, setItens] = useState([]);
     const [fieldregister, setFieslRegister] = useState(false);
     const [datalist, setDataList] = useState(false);
