@@ -14,7 +14,7 @@ export const GetItens = async (req, res) => {
 
         // Configurar o cabeçalho Cache-Control para permitir o cache por 12 horas e revalidação
         // 43200 segundos = 12 horas
-        res.setHeader('Cache-Control', 'public, max-age=60, must-revalidate'); 
+        res.setHeader('Cache-Control', 'public, max-age=600, must-revalidate'); 
 
         res.json(documents);
     } catch (error) {

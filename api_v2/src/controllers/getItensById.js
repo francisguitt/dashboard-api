@@ -18,7 +18,7 @@ export const GetById = async (req, res) => {
         const data = docSnapshot.data();
 
         // Configurar o cabeçalho Cache-Control para permitir o cache por 12 horas e revalidação
-        res.setHeader('Cache-Control', 'public, max-age=60, must-revalidate'); // 43200 segundos = 12 horas
+        res.setHeader('Cache-Control', 'public, max-age=600, must-revalidate'); // 43200 segundos = 12 horas
 
         res.json({ id: docSnapshot.id, ...data });
 

@@ -41,7 +41,6 @@ const Screen = () => {
 
     const searchItem = async () => {
         try {
-
             const response = await axios.get(`${API_BASE_URL}/itens/${searchItemId}`);
             const item = response.data;
             setSearchedItem(item);
@@ -55,15 +54,15 @@ const Screen = () => {
             const response = await axios.post(`${API_BASE_URL}/itens`, newItem);
             const createdItem = response.data;
             setItens([...itens, createdItem]);
-            setNewItem({ id: '', name: '', description: '', price: '', category: '', image: '' });
-            setAddItemDisabled(true); // Desabilita o botão após a criação do item
+            setNewItem({id:'', name: '', description: '', price: '', category: '', image: '' });
+            setAddItemDisabled(true); 
             fetchItens();
         } catch (error) {
             console.error('Erro ao criar o item:', error);
             alert('Erro ao criar o item:', error);
         }
     };
-
+    
     const deleteItem = async (id) => {
         try {
             await axios.delete(`${API_BASE_URL}/itens/${id}`);
