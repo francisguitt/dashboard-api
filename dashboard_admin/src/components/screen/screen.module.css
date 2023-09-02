@@ -20,11 +20,43 @@
     font-size: 50px;
 }
 
-.wrapper_item_create_form_item_update_form{
+.wrapper_item_create_form_item_update_form {
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     padding: 7px;
     margin-top: -10px;
+}
+
+.pagination_prev_next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* background-color: red; */
+}
+
+.area_buttons_pagination_prev_next {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    max-width: 1280px;
+    width: 100%;
+}
+.area_buttons_pagination_prev_next  button{
+    background-color: rgb(175, 175, 175);
+    /* background-color: #1d6f0b; */
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    padding:3px;
+    width: 60px;
+    
+}
+
+.icons{
+    font-size: 25px;
+    color: rgb(212, 208, 208);
 }
