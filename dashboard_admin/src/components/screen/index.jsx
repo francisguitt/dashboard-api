@@ -25,7 +25,7 @@ const Screen = () => {
     const [updatedItem, setUpdatedItem] = useState({ id: 0, name: '', description: '', price: '', category: '', image: '' });
     const [addItemDisabled, setAddItemDisabled] = useState(true);
 
-
+    const [load, setLoad] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 4;
 
@@ -35,6 +35,7 @@ const Screen = () => {
 
     const fetchItens = async () => {
         try {
+            setLoad(true);
             const response = await axios.get(`${API_BASE_URL}/itens/`);
             const allItems = response.data;
 
@@ -44,7 +45,7 @@ const Screen = () => {
 
             // Get the items for the current page
             const itemsToShow = allItems.slice(startIndex, endIndex);
-
+            setLoad(false);
             setItens(itemsToShow);
         } catch (error) {
             console.error('Erro ao obter os itens:', error);
@@ -186,6 +187,9 @@ const Screen = () => {
                 searchItem={searchItem}
             />
             <div className={styles.main}>
+                <div style={{
+                    margin: "20px auto"
+                }}>  {load && <h2>Carregando...</h2>}</div>
                 {datalist && (
                     <div className={styles.list_products}>
                         <DataBase className={styles.Icon_data_base} />
@@ -221,24 +225,24 @@ const Screen = () => {
                         />
                     )}
                 </div>
-            </div>
+            </div >
 
             <Footer />
 
-            {datalist && (
-                <div className={styles.pagination_prev_next}>
-                    <div className={styles.area_buttons_pagination_prev_next}>
-                        <button onClick={prevPage} disabled={currentPage === 1} >
-                            <ArrowLeft className={styles.icons} />
-                            <strong style={{ color: "#333" }}>anterior</strong>
-                        </button>
-                        <button onClick={nextPage} disabled={itens.length < itemsPerPage}>
-                            <ArrowRight className={styles.icons} />
-                            <strong style={{ color: "#333" }}>próximo</strong>
-                        </button>
+            {
+                datalist && (
+                    <div className={styles.pagination_prev_next}>
+                        <div className={styles.area_buttons_pagination_prev_next}>
+                            <button onClick={prevPage} disabled={currentPage === 1} >
+                                <ArrowLeft className={styles.icons} />
+                            </button>
+                            <button onClick={nextPage} disabled={itens.length < itemsPerPage}>
+                                <ArrowRight className={styles.icons} />
+                            </button>
+                        </div>
                     </div>
-                </div>
-            )}
+                )
+            }
         </>
     );
 };
